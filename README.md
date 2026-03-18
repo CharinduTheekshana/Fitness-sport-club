@@ -13,7 +13,7 @@ A responsive promotional website for a local fitness brand.
 3. Or use Live Server in VS Code
 
 ## Live Link
-[View Live Site](your-netlify-link-here)
+[View Live Site](https://cozy-otter-a0c31c.netlify.app/)
 
 ## Features
 - Responsive design (Mobile, Tablet, Desktop)
