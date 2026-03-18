@@ -905,3 +905,50 @@ ul {
   .nav-links.active { display: flex; }
   .nav-links a { padding: 12px 0; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.05); }
 }
+
+
+/* Motivation Quote Box */
+.motivation-quote {
+  background: rgba(201, 154, 16, 0.12);
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+.motivation-quote span {
+  font-size: 14px;
+  color: var(--off-white);
+  opacity: 0.85;
+  font-style: italic;
+}
+
+/* Filter Buttons */
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  background: transparent;
+  border: 1px solid rgba(201,154,16,0.4);
+  color: var(--off-white);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+  font-weight: 600;
+}
+.service-card.hidden {
+  display: none;
+}

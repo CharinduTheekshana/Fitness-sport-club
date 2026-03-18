@@ -28,6 +28,11 @@
         <li><a href="#contact">Contact</a></li>
         </ul>
 
+        <!-- Hero Quote (API)-->
+        <div class="motivation-quote">
+            <span id="quoteText">💪 Loading motivation...</span>
+        </div>
+
         <a href="#membership" class="btn-primary">Join Now</a>
         <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -82,29 +87,42 @@
         <span class="section-label">WHAT WE OFFER</span>
         <h2>Our Services</h2>
 
+        <!--Search/Filter-->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="training">Training</button>
+            <button class="filter-btn" data-filter="wellness">Wellness</button>
+            <button class="filter-btn" data-filter="cardio">Cardio</button>
+        </div>
+
         <div class="services-grid">
 
-        <div class="service-card">
+        <!--Personal training card-->
+        <div class="service-card" data-category="training">
             <div class="service-icon">💪</div>
             <h3>Personal Training</h3>
             <p>Expert trainers to guide your 
             fitness journey</p>
         </div>
 
-        <div class="service-card">
+        <!--Weight training card-->
+        <div class="service-card" data-category="training">
             <div class="service-icon">🏋️</div>
             <h3>Weight Training</h3>
             <p>Build strength with modern 
             equipment</p>
         </div>
 
-        <div class="service-card">
+        <!--Yoga & Flexibility card-->
+
+        <div class="service-card" data-category="wellness">
             <div class="service-icon">🧘</div>
             <h3>Yoga & Flexibility</h3>
             <p>Improve balance and flexibility</p>
         </div>
 
-        <div class="service-card">
+        <!--Cardio card-->
+        <div class="service-card" data-category="cardio">
             <div class="service-icon">🥊</div>
             <h3>Cardio & Boxing</h3>
             <p>High energy workouts for 
@@ -249,28 +267,23 @@
 
             <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" 
-            placeholder="Your name" />
+            <input type="text" id="name" name="from_name" placeholder="Your name" />
             <span class="error" id="nameError"></span>
             </div>
 
             <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" 
-            placeholder="Your email" />
+            <input type="email" id="email" name="from_email" placeholder="Your email" />
             <span class="error" id="emailError"></span>
             </div>
 
             <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" rows="5" 
-            placeholder="Your message"></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
             <span class="error" id="messageError"></span>
             </div>
 
-            <button type="submit" class="btn-gold-full">
-            Send Message
-            </button>
+            <button type="submit" class="btn-gold-full">Send Message</button>
 
             <div class="success-msg" id="successMsg">
             ✅ Message sent successfully! 
@@ -323,6 +336,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </body>
 </html>
